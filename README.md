@@ -42,6 +42,16 @@ mysql -h 127.0.0.1 -u root
 ![image](https://github.com/pia222kr20240629/docker/assets/174164680/557466b2-6a08-4f99-a136-31e42952a882)
 
 
+### 도커 컨테이너 확인
+docker ps 
+docker ps -a
+
+### 삭제
+docker rm -f [ 컨터이너 아이디]
+
+docker rmi -f [ 이미지 아이디 ]
+
+
 
 
 
