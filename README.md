@@ -1,1 +1,28 @@
 # docker
+1. 설치
+sudo dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo
+
+sudo dnf install docker-ce docker-ce-cli containerd.io
+
+# 도커 자동실행
+sudo systemctl start docker
+sudo systemctl enable docker
+
+
+# 사용자 권한
+sudo usermod -aG docker $USER
+# 권한 적용
+newgrp docker
+
+# 도커 동작 확인
+docker --version
+# 도커를 이용해서 hello-world 이미지를 받아서 컨터이너로 실행후 종료
+docker run hello-world
+
+# 도커 상태 확인
+# 실행중인 컨테이너 확인
+docker ps
+# 모든 컨테이너 확인
+docker ps -all
+# 이미지 확인
+docker images
