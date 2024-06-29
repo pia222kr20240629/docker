@@ -73,7 +73,18 @@ docker run -d -p 8888:8888 -p 6006:6006 teamlab/pydata-tensorflow:0.1
 
 
 
+## 현재 실행중인 컨테이너 확인
+docker ps
+## 컨터이너 목록  exit 항목이 있으면 실행되지 않는 컨테이너
+docker ps -a
 
+## 컨테이너 삭제
+docker rm 컨터이너아이디
+## 모든 컨테이너 삭제
+docker rm $(docker ps -a -q)
+
+## 모든 이미지 삭제
+docker rmi $(docker images -q)
 
 
 
