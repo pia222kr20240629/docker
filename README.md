@@ -6,6 +6,7 @@ sudo dnf install docker-ce docker-ce-cli containerd.io
 
 ###  도커 자동실행
 sudo systemctl start docker
+
 sudo systemctl enable docker
 
 
