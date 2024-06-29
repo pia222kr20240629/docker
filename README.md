@@ -36,6 +36,35 @@ sudo dnf install mysql
 
 ### mysql 컨터이너 실행
 docker run -d -p 3306:3306 -e MYSQL_ALLOW_EMPTY_PASSWORD=true --name mysql mysql:5.7
-### 1
-### 1
-### 1
+### 컨테이너 실행이 되는 상태에서 mysql에 접속하기
+mysql -h 127.0.0.1 -u root
+### 접속한후에 mysql 명령어 써보기
+![image](https://github.com/pia222kr20240629/docker/assets/174164680/557466b2-6a08-4f99-a136-31e42952a882)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
