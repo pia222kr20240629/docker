@@ -31,8 +31,8 @@ docker images
 ![image](https://github.com/pia222kr20240629/docker/assets/174164680/480d042f-80af-4d21-a891-c223ebe1541e)
 
 
-### 1
-### 1
+### mysql 컨터이너 실행
+docker run -d -p 3306:3306 -e MYSQL_ALLOW_EMPTY_PASSWORD=true --name mysql mysql:5.7
 ### 1
 ### 1
 ### 1
