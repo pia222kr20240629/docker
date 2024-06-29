@@ -51,6 +51,11 @@ docker rm -f [ 컨터이너 아이디]
 
 docker rmi -f [ 이미지 아이디 ]
 
+## 워드프레스용 데이터베이스 생성하기
+mysql -h 127.0.0.1 -u root
+
+create database wp CHARACTER SET utf8;
+grant all privileges on wp.* to wp@'%' identified by 'wp';
 
 
 
