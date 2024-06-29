@@ -26,3 +26,6 @@ docker ps
 docker ps -all
 ###  이미지 확인
 docker images
+
+
+![image](https://github.com/pia222kr20240629/docker/assets/174164680/480d042f-80af-4d21-a891-c223ebe1541e)
