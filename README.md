@@ -86,6 +86,11 @@ docker rm $(docker ps -a -q)
 ## 모든 이미지 삭제
 docker rmi $(docker images -q)
 
+## 로그확인
+docker logs --tail 10 -f my_ubuntu2     마지막 10줄을 실시간으로
+docker logs  my_ubuntu2                 로그전체
+docker logs --tail 10  my_ubuntu2      마지막 10줄만 출력
+docker logs --tail my_ubuntu2          마지막 5줄?만 출력
 
 
 
