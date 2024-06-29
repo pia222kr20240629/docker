@@ -67,7 +67,8 @@ docker run -d -p 8080:80 --link mysql:mysql -e WORDPRESS_DB_HOST=mysql -e WORDPR
 docker run -d -p 8080:80 --link mysql:mysql -e WORDPRESS_DB_HOST=mysql -e WORDPRESS_DB_NAME=wp -e WORDPRESS_DB_USER=wp -e WORDPRESS_DB_PASSWORD=wp wordpress
 
 
-
+## tensorflow 실행
+docker run -d -p 8888:8888 -p 6006:6006 teamlab/pydata-tensorflow:0.1
 
 
 
