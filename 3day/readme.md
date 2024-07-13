@@ -29,7 +29,28 @@
   - source ~/.bashrc
 
 
+# Pod 조회
+kubectl get pod
 
+# 줄임말(Shortname)과 복수형 사용가능
+kubectl get pods
+kubectl get po
+
+# 여러 TYPE 입력
+kubectl get pod,service
+#
+kubectl get po,svc
+
+# Pod, ReplicaSet, Deployment, Service, Job 조회 => all
+kubectl get all
+
+# 결과 포멧 변경
+kubectl get pod -o wide
+kubectl get pod -o yaml
+kubectl get pod -o json
+
+# Label 조회
+kubectl get pod --show-labels
 
 
 
