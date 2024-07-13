@@ -21,6 +21,12 @@
   - exec : 컨테이너에 명령어를 전달, 주로 컨테이너에 접근(실행)
   - config : kubectl의 설정
 
+- 별칭 alias
+  - alias k='kubectl'
+  - 다음실행시에도 기억하게 하려면 설정을 추가
+  - echo "alias k='kubectl'" >> ~/.bashrc
+  - 환경설정 파일 적용
+  - source ~/.bashrc
 
 
 
