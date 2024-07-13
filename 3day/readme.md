@@ -4,16 +4,32 @@
 ![image](https://github.com/user-attachments/assets/7d85a658-f3c5-45a7-ae6c-9f28cf5d7391)
 
 - 현재상태확인
-- 
-![image](https://github.com/user-attachments/assets/4484b850-f081-45d5-98af-625d2f97ae79)
+- ![image](https://github.com/user-attachments/assets/4484b850-f081-45d5-98af-625d2f97ae79)
 
 - 접속테스트  url정보로 접속
-- 
-![image](https://github.com/user-attachments/assets/729dfda0-efae-4534-97bc-b6af79e221c6)
+- ![image](https://github.com/user-attachments/assets/729dfda0-efae-4534-97bc-b6af79e221c6)
 
 - 삭제
-  
- ![image](https://github.com/user-attachments/assets/d573ea46-84a2-45d9-9ac2-4da6441a967a)
+- ![image](https://github.com/user-attachments/assets/d573ea46-84a2-45d9-9ac2-4da6441a967a)
+
+- kubectl 명령
+  - apply : -f옵션 같이사용  상태를 적용
+  - get : 리소스 목록
+  - describe : 자세하게 보여줌
+  - delete : 리소스 제거
+  - logs : 컨테이너 로그
+  - exec : 컨테이너에 명령어를 전달, 주로 컨테이너에 접근(실행)
+  - config : kubectl의 설정
+
+
+
+
+
+
+
+
+
+
 
 
 
