@@ -162,7 +162,7 @@ spec:
 		spec:
 			containers:
 				- name: db
-				  image: pia222/db
+				  image: postgres:9.4
 				  env:
 				  	- name: POSTGRES_USER
 				  	  value: "postgres"
