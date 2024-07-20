@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: redis-counter
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: redis-counter
+  template:
+    metadata:
+      labels:
+        app: redis-counter
+    spec:
+      containers:
+      - name: redis-counter
+        image: pia222/my-redis-counter
+        env:
+        - name: REDIS_HOST
+          value: "redis"
+        - name: REDIS_PORT
+          value: "6379"
