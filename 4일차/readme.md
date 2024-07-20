@@ -60,6 +60,9 @@ k logs <pod name>
 - postres
 - result : node
 ---------------------------------------------------
-
+- vote result worker 폴더를 각각 만들고
+- git을 참고해서 각 폴더에 Dockerfile 및 py 파일을 만들어서 Docker로 이미지화 한다.(허브에 push)
+- 쿠버네티스 배포하기전에 k delete <kind명> --all 로 전부 삭제한다. (서비스, 파드 등등)
+- 다시 상위 폴더로 나와서  k apply -f vote.yml을 실행해서 쿠버네티스 배포
 
 
