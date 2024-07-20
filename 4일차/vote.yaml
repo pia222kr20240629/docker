@@ -131,7 +131,7 @@ spec:
 		spec:
 			containers:
 				- name: redis
-				  image: pia222/redis
+				  image: redis
 				  env:
 				  	- containerPort: 6379	
 				  	  protocol: TCP
