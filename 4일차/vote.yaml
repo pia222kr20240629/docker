@@ -15,10 +15,20 @@ spec:
         - name: vote
           image: pia222/vote
           env:
+            - name: POSTGRES_HOST
+              value: "db"
+            - name: POSTGRES_PORT
+              value: "5432"
+            - name: POSTGRES_USER
+              value: "postgres"
+            - name: POSTGRES_PASSWORD
+              value: "postgres"
+            - name: POSTGRES_DB
+              value: "postgres"
             - name: REDIS_HOST
               value: "redis"
             - name: REDIS_PORT
-              value: "6379"
+              value: "6379" 
           livenessProbe:
             httpGet:
               path: /
@@ -65,6 +75,16 @@ spec:
               value: "db"
             - name: POSTGRES_PORT
               value: "5432"
+            - name: POSTGRES_USER
+              value: "postgres"
+            - name: POSTGRES_PASSWORD
+              value: "postgres"
+            - name: POSTGRES_DB
+              value: "postgres"
+            - name: REDIS_HOST
+              value: "redis"
+            - name: REDIS_PORT
+              value: "6379"          
           livenessProbe:
             httpGet:
               path: /
@@ -107,14 +127,20 @@ spec:
         - name: worker
           image: pia222/worker
           env:
-            - name: REDIS_HOST
-              value: "redis"
-            - name: REDIS_PORT
-              value: "6379"
             - name: POSTGRES_HOST
               value: "db"
             - name: POSTGRES_PORT
               value: "5432"
+            - name: POSTGRES_USER
+              value: "postgres"
+            - name: POSTGRES_PASSWORD
+              value: "postgres"
+            - name: POSTGRES_DB
+              value: "postgres"
+            - name: REDIS_HOST
+              value: "redis"
+            - name: REDIS_PORT
+              value: "6379" 
 ---
 apiVersion: apps/v1
 kind: Deployment
