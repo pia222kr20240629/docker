@@ -37,6 +37,7 @@ docker login -u pia22
 
 ### Docker 이미지를 쿠버네티스 클러스터에 배포
 docker tag my-redis-counter pia222/my-redis-counter
+
 docker push pia222/my-redis-counter
 
 
