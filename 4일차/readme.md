@@ -43,3 +43,23 @@ docker push pia222/my-redis-counter
 ### 매니패스트 파일을 작성해서 python 어플리캐이션을 배포
 counter-deployment.yaml
 
+### 쿠버네티스를 클러스터에 배포
+k apply -f counter-deployment.yaml
+
+## 결과확인
+k  get pods
+k logs <pod name>
+
+-----------------------------------------------------------------------------
+### 투표시스템
+- vote
+- Reids : 개인별 데이터
+- worker
+
+   
+- postres
+- result : node
+---------------------------------------------------
+
+
+
