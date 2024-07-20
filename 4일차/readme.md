@@ -16,8 +16,10 @@ k exec -it <redis-pod-name> -- redis-cli
 
 ### 1번 데이터 베이스 선택
 SELECT 1
+
 ### 키-값 설정
 SET myKey "Hello, Redis"
+
 ### 값 가져오기
 GET myKey
 
@@ -26,6 +28,7 @@ counter.py
 
 ### python 도커파일 작성
 Dockerfile
+
 ### python 애플리케이션을 Docker 이미지로 빌드
 docker build -t my-redis-counter
 
