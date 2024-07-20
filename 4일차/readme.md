@@ -40,4 +40,6 @@ docker tag my-redis-counter pia222/my-redis-counter
 
 docker push pia222/my-redis-counter
 
+### 매니패스트 파일을 작성해서 python 어플리캐이션을 배포
+counter-deployment.yaml
 
