@@ -64,5 +64,10 @@ k logs <pod name>
 - git을 참고해서 각 폴더에 Dockerfile 및 py 파일을 만들어서 Docker로 이미지화 한다.(허브에 push)
 - 쿠버네티스 배포하기전에 k delete <kind명> --all 로 전부 삭제한다. (서비스, 파드 등등)
 - 다시 상위 폴더로 나와서  k apply -f vote.yml을 실행해서 쿠버네티스 배포
-
+- k  get pods 해서 에러가 없음을 확인
+- minikube ip  ip 정보를 확인
+- http://<minikube ip>/vote  실행하는데.. 이렇게 하면 GET 방식이여서 post맨을 인터넷에서 다운받아서
+- 주소는 http://<minikube ip>/vote  ui에 보면 요청타입을 json으로 레디오 버튼을 클릭하고
+- {"vote":"100"}
+- 결과는 http://<minikube ip>/result
 
