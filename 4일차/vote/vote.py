@@ -23,4 +23,4 @@ def vote():
 	return jsonify({'status':'error', 'message':'Invalid vote'}), 400
 
 if __name__ == '__main__'	:
-	app.run(host='0,0,0,0', port=80)
+	app.run(host='0.0.0.0', port=80)
