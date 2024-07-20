@@ -11,4 +11,4 @@ WORKDIR /app
 COPY worker.py .
 
 # 컨테이너 실행 명령어 설정
-CMD ["python", "worker.py"]
+CMD ["python3", "worker.py"]
