@@ -2,7 +2,7 @@
 FROM python:3.9-slim
 
 # 필요한 패키지 설치
-RUN pip install redis psycopg2-binary
+RUN pip install flask psycopg2-binary
 
 # 작업 디렉토리 설정
 WORKDIR /app
