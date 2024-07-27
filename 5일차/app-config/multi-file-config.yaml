@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: multi-file-config
+data:
+  app-config.yml: |
+    server:
+      port: 8080
+    database:
+      url: jdbc:mysql://db.example.com:3306/mydb
+  log-config.yml: |
+    logging:
+      level: INFO
