@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: html-templates
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>Welcome</title>
+    </head>
+    <body>
+      <h1>Welcome to our website!</h1>
+    </body>
+    </html>
