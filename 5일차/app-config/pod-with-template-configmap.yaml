@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-with-env-template-configmap
+spec:
+  containers:
+    - name: myapp
+      image: busybox
+      command: ['sh','-c','cat /templates/index.html && sleep 3600']  
+      volumeMounts:
+        - name: template-volume
+          mountPath: /templates
+  volumes:
+    - name: template-volume
+      configMap:
+        name: html-templates
