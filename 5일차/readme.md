@@ -42,3 +42,7 @@
   - 특정(app) 컨터이너에서 생성된 파일을 별도의 컨터이너(sidecar)가 수집
 - k apply -f empydir.yaml
 - k logs -f sidecar -c sidecar
+
+## hostpath
+- 호스트 디렉터리를 컨테이너 디렉터리에 연결하는 방법
+- 호스트의 /var/log 디엑터리를 연결해서 내용 확인
