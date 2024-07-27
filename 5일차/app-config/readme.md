@@ -4,3 +4,5 @@
 
 
 - k exec -it pod-with-env-configmap -- env | grep -E 'API_|LOG_'
+
+- k exec -it pod-with-multi-file-configmap -- sh -c 'cat /config/app-config.yml /config/log-config.yml'
