@@ -40,3 +40,5 @@
 - Pod에 속한 컨터이너간의 디렉터리를 공유하는 방법
 - sidecar 패턴
   - 특정(app) 컨터이너에서 생성된 파일을 별도의 컨터이너(sidecar)가 수집
+- k apply -f empydir.yaml
+- k logs -f sidecar -c sidecar
