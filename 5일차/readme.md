@@ -49,4 +49,11 @@
 - k apply -f hostpath.yaml
 - 컨터이너에 접속후 /host/var/log 디렉터리를 확인
 - k exec -it host-log --sh
-- ls -al /host/var/log
+- ls -al /host/var/log  컨터이너의 데이터
+- host의 내용과 같아야한다...
+- docker ps
+- docker exec -it <containerid> /bin/bash
+- ls -al /var/log
+
+- 컨테이너에서 파일을 생서하면 host 에서 확인가능
+- 컨테이너에 접속을 해서 torch 명령어로 파일을 생성한후에 host에서 확인 가능
