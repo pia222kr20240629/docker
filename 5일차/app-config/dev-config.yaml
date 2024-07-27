@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config-dev
+data:
+  api.url: http://dev-api.example.com
+  log.level: debug
