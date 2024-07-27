@@ -3,3 +3,34 @@
 - 두개의 간단한 Nginx 배포
 - 각각의 Nginx 배포를 서비스로 노출
 - Ingress 리소스를 사용해서 트래픽을 각각의 서비스로 라우팅
+
+
+## 1. nginx 배포 설정
+- 두개의 nginx 배포설정
+- nginx1-deployment.yaml, nginx2-deployment.yaml
+- kubectl apply -f nginx1-deployment.yaml
+- kubectl apply -f nginx2-deployment.yaml
+
+
+## 2. 서비스 생성
+- nginx1-service.yaml nginx2-service.yaml
+- kubectl apply -f nginx1-service.yaml
+- kubectl apply -f nginx2-service.yaml
+
+## 3. ingress 리소스 생성
+- ingress.yaml
+- kubectl apply -f ingress.yaml
+
+## ingress 애드온 활성
+- minikube addons enable ingress
+
+
+## 클러스터 ip 확인
+- minikube ip
+
+## 도메인셋팅 
+- sudo sh -c 'echo "<minikube ip> example.com" >> /etc/hosts'
+
+## 브라우져 테스트
+- http://<minikube ip>/nginx1
+- http://<minikube ip>/nginx2
