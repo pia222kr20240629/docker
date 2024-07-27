@@ -46,3 +46,7 @@
 ## hostpath
 - 호스트 디렉터리를 컨테이너 디렉터리에 연결하는 방법
 - 호스트의 /var/log 디엑터리를 연결해서 내용 확인
+- k apply -f hostpath.yaml
+- 컨터이너에 접속후 /host/var/log 디렉터리를 확인
+- k exec -it host-log --sh
+- ls -al /host/var/log
