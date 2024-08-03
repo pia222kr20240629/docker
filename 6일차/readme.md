@@ -49,6 +49,11 @@
   -  echo "tls.crt: $(tr -d '\n' < tls.crt.base64)" > tls-secret.yml
   -  echo "tls.key: $(tr -d '\n' < tls.key.base64)" >> tls-secret.yml
 ### ssh-secret.yml 배포
-  - k apply -f ssh-secret.yml
+  - k apply -f tls-secret.yml
+  - k apply -f my-service.yml
+  - k apply -f tls-ingress.yml
+  - k apply -f my-appp.yml
+  - k port-forward service/my-service 8080:80
+  - http://localhost:8080 접속해서 확인
 
 
