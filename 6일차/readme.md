@@ -33,3 +33,16 @@
   - k get pod
   - k logs my-pod
   - 출력 확인
+
+# openSSL을 이용한 tls 키 생성
+### 개인키 tls.key 생성
+  - openssl genrsa -out tls.key 2048
+### 인증서 서명 요청(CSR) 생성
+  - openssl req -new -key tls.key -out tls.csr
+### 자체 서명된 인증서(tls.crt)생성
+  - openssl x509 -req -in tls.csr -signkey tls.key -out tls.crt -days 365
+### base64 인코딩
+  - base64 tls.crt > tls.crt.base64
+  - base64 tls.key > tls.key.base64
+
+
