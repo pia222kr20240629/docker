@@ -12,3 +12,7 @@
 ### 쿠버네티스 클러스터 배포
   - k apply -f deployment.yml
   - k apply -f postgres-service.yml
+
+### 도커 컴포즈을 이용한 실행
+  - docker-compose up -d
+  - docker-compose logs  # 로그확인
