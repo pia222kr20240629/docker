@@ -1,3 +1,7 @@
+# 윈도우 <- > 가상머신 간의 파일 전송  윈도우 commnad 창에서 실시
+  ### 가상머신 ->  현재 경로의 윈도우로 모든 파일 전송  반대는 반대로 명령어를 입력한다.
+  - scp root@192.168.150.37:/home/rocky/secret/* ./
+
 ### mkdir secret
 ### cd secret
 ### vi username.txt
