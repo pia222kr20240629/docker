@@ -34,7 +34,7 @@ def register():
         password = request.form['password']
         conn = get_db_connection()
         cursor = conn.cursor()
-        cursor.execute(f"INSERT INTO users (username, password) VALUES({username}, {password)}")
+        cursor.execute(f"INSERT INTO users (username, password) VALUES({username}, {password})")
         conn.commit()
         cursor.close()
         conn.close()
