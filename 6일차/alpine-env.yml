@@ -6,7 +6,7 @@ spec:
   containers:
     - name: alpine
       image: alpine
-      command: ["sleep"]
+      command: ["sleep"]  
       args: ["100000"]
       env:
         - name: DB_USERNAME

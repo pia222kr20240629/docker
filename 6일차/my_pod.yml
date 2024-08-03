@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my_pod
+spec:
+  containers:
+    - name: my_container
+      image: busybox
+      command: ["sh", "-c","echo Username: $USERNAME && echo Password: $PASSWORD && sleep 3600"]
+      env:
+        - name: USERNAME
+          valueFrom:
+            secretKeyRef:
+              name: my_secret
+              key: username
+        - name: PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: my_secret
+              key: password
