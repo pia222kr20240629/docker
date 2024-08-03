@@ -16,3 +16,6 @@
 ### 도커 컴포즈을 이용한 실행
   - docker-compose up -d
   - docker-compose logs  # 로그확인
+
+### 확인
+  - http://localhost:50000
