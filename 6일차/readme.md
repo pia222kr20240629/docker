@@ -17,4 +17,15 @@
 ### 환경변수 확인
   - k apply -f alpine-env.yml
   - k exec -it alpine-env -- env
- 
+
+# 실습2
+  - echo -n 'admin' | base64
+  - echo -n 'password' | base64
+### my-secret.yml 
+  - k apply -f my-secret.yml
+### my-pod.yml 
+  - k apply -f my-pod.yml
+### pod 로그 확인
+  - k get pod
+  - k logs my-pod
+  - 출력 확인
