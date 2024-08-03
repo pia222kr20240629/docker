@@ -44,5 +44,11 @@
 ### base64 인코딩
   - base64 tls.crt > tls.crt.base64
   - base64 tls.key > tls.key.base64
+### ssh-secret.yml 파일 생성
+  - tls.crt.base64의 파일이 줄 바꿈이 있어서 다음과 같이 yml 파일의 기본 모양을 만든다
+  -  echo "tls.crt: $(tr -d '\n' < tls.crt.base64)" > tls-secret.yml
+  -  echo "tls.key: $(tr -d '\n' < tls.key.base64)" >> tls-secret.yml
+### ssh-secret.yml 배포
+  - k apply -f ssh-secret.yml
 
 
