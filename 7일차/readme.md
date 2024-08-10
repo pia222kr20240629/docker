@@ -18,3 +18,5 @@ chat-app
 - localhost:3000으로 확인하고.
 - docker stop <containerid>
 # 쿠버네티스 배포
+- k apply -f deployment.yml
+- k apply -f service.yml
