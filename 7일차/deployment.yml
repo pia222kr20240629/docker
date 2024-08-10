@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: chat-app
-        image: chat-app-kuber:latest
+        image: pia222/chat-app:latest
         ports:
           - containerPort: 3000
