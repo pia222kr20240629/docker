@@ -20,3 +20,6 @@ chat-app
 # 쿠버네티스 배포
 - k apply -f deployment.yml
 - k apply -f service.yml
+![image](https://github.com/user-attachments/assets/6d694903-1c9d-4cbe-b91f-fb50fac96e04)
+
+-http://<internel ip>:30000
