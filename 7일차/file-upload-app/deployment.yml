@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: file-upload-app-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: file-upload-app2
+  template:
+    metadata:
+      labels:
+        app: file-upload-app2
+    spec:
+      containers:
+        - name: file-upload-app2
+          image: pia222/file-upload-app:latest
+          ports:
+            - containerPort: 3000
