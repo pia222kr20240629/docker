@@ -24,3 +24,13 @@ chat-app
 ![image](https://github.com/user-attachments/assets/6d694903-1c9d-4cbe-b91f-fb50fac96e04)
 
 -http://internel ip:30000
+
+
+
+# 웹기반 파일 업로드 다운로드
+file-upload-app
+  - -Dockerfile
+  - -app.js
+  - -package.json
+  - -public/
+    - -index.html 
