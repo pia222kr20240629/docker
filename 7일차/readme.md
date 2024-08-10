@@ -11,5 +11,5 @@ chat-app
 - node -v
 - npm -v
 - npm install express
-
+- npm start     --> localhost:3000 접속해서 실행 확인
 # 도커로 컨테이너화
