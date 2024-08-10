@@ -3,3 +3,10 @@ chat-app
   - -package.json    # 패키지 관리
   - -public/           
     - -index.html    # 화면
+
+
+- npm 설치는 nodejs설치를통해 해결
+- sudo dnf update
+- sudo dnf install nodejs npm
+- node -v
+- npm -v
