@@ -11,3 +11,5 @@ chat-app
 - node -v
 - npm -v
 - npm install express
+
+# 도커로 컨테이너화
