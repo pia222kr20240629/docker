@@ -13,3 +13,8 @@ chat-app
 - npm install express
 - npm start     --> localhost:3000 접속해서 실행 확인
 # 도커로 컨테이너화
+- docker build -t chat-app .
+- docker run -d -p 3000:3000 chat-app
+- localhost:3000으로 확인하고.
+- docker stop <containerid>
+# 쿠버네티스 배포
