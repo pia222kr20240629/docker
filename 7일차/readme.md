@@ -6,8 +6,8 @@ chat-app
 
 
 - npm 설치는 nodejs설치를통해 해결
-- sudo dnf update
-- sudo dnf install nodejs npm
+- sudo dnf update    # npm 설치를 위한 dnf 업데이트
+- sudo dnf install nodejs npm  # node를 설치하면 npm도 같이 설치된다   위의명령어와 이 명령어는 로컬계정의 루트에서 실행하는것을 추천
 - node -v
 - npm -v
 - npm install express
