@@ -22,4 +22,4 @@ chat-app
 - k apply -f service.yml
 ![image](https://github.com/user-attachments/assets/6d694903-1c9d-4cbe-b91f-fb50fac96e04)
 
--http://<internel ip>:30000
+-http://internel ip:30000
