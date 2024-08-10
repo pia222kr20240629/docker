@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>File Upload and Download</title>
+</head>
+<body>
+  <h1>File Upload and Download</h1>
+  <form id="uploadForm">
+    <input type="file" id="fileInput" />
+    <button type="submit">Upload</button>
+  </form>
+
+  <h2>Uploaded Files</h2>
+  <ul id="fileList"></ul>
+
+  <script>
+    document.getElementById('uploadForm').addEventListener('submit', (event) => {
+      event.preventDefault();
+      const fileInput = document.getElementById('fileInput');
+      const formData = new FormData();
+      formData.append('file', fileInput.files[0]);
+
+      fetch('/upload', {
+        method: 'POST',
+        body: formData
+      })
+      .then(response => response.json())
+      .then(data => {
+        const fileList = document.getElementById('fileList');
+        const listItem = document.createElement('li');
+        listItem.textContent = data.filePath;
+        const downloadLink = document.createElement('a');
+        downloadLink.href = data.filePath;
+        downloadLink.textContent = 'Download';
+        downloadLink.style.marginLeft = '10px';
+        listItem.appendChild(downloadLink);
+        fileList.appendChild(listItem);
+      });
+    });
+  </script>
+</body>
+</html>
+
