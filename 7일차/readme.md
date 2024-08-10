@@ -10,3 +10,4 @@ chat-app
 - sudo dnf install nodejs npm
 - node -v
 - npm -v
+- npm install express
