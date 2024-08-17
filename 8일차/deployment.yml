@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: ingress-example:latest
+          image: pia222/ingress-example:latest
           ports:
             - containerPort: 80
 ---
