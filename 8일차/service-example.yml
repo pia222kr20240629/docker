@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: service-example
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: service-example
+  template:
+    metadata:
+      labels:
+        app: service-example
+    spec:
+      containers:
+      - name: service-example
+        image: pia222/service-example
+        ports:
+        - containerPort: 80
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: service-example
+  namespace: default
+spec:
+  ports:
+  - port: 80
+    targetPort: 80
+  selector:
+    app: service-example
+

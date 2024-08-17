@@ -1,19 +1,34 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: ingress-example
-  annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
+  name: example-ingress
+  namespace: default
 spec:
   rules:
-    - host: ingress-example.local
-      http:
-        paths:
-          - path: /
-            pathType: Prefix
-            backend:
-              service:
-                name: ingress-example-service
-                port:
-                  number: 80
-
+  - host: example.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: service-example
+            port:
+              number: 80
+  - host: example.com
+    http:
+      paths:
+      - path: /blog
+        pathType: Prefix
+        backend:
+          service:
+            name: service-blog
+            port:
+              number: 80
+      - path: /help
+        pathType: Prefix
+        backend:
+          service:
+            name: service-help
+            port:
+              number: 80
