@@ -8,3 +8,4 @@
 ![image](https://github.com/user-attachments/assets/0162262d-5f75-4770-8776-d9d24e3037a6)
 
 
+#쿠버네티스에 배포 및 Ingress 설정
