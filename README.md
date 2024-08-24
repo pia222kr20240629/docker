@@ -1,3 +1,7 @@
+# pc와 가상머신간의 파이 전송
+### scp -r root@192.168.150.37:/home/rocky/ingress-example/** ./
+
+
 # docker
 ### 설치
 sudo dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo
