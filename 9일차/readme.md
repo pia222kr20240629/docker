@@ -1,6 +1,6 @@
 # 사전 환경 설정
 ### 윈도우에서 스프링부트로 생성한 프로젝트를 리눅스로 옮기고  컴파일 
-### maven 최신버전 설치
+### maven 17버전 설치
  - https://maven.apache.org/download.cgi
  - 클릭->tar.gz archives	Binary apache-maven-4.0.0-beta-3-bin.tar.gz (sha512, asc)
 - 리눅스로 파일 전송
@@ -18,4 +18,8 @@
 - mvn clean package
 
 - target폴더가 생김
+
+###  자바 17설치
+- sudo dnf install openjdk-17-jdk
+- java -version
 
