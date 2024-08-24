@@ -6,3 +6,5 @@
 - spring.datasource.username=root
 - spring.datasource.password=rootpassword
 - spring.jpa.hibernate.ddl-auto=update
+
+### controller / model / repository 폴더의 위치는 /home/rocky/9day/builletinboard/src/main/java/com/example/builletinboard
