@@ -23,3 +23,7 @@
 - sudo dnf install openjdk-17-jdk
 - java -version
 
+## 도커실행
+docker-compose up -d
+
+## 브라우져에서 http://localhost:8080
