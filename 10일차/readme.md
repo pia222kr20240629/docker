@@ -33,7 +33,9 @@
 
 ## 브라우져에서 http://localhost:8080/posts
 - get방식으로 post 테이블에 있는 데이터를 모두 가져온다
-## post맨을 설치하고 
+## post맨을 다운로드해서"postman-linux-x64.tar.gz"
+- 압축해제 "tar -xvzf postman-linux-x64.tar.gz"
+  - 압축해제한 실행파일을 커맨드명령어가 아닌 ui에서 실행한다
 - 포스트맨 어플에서 file -new -http 를 선택한후
 - post 방식으로 변경하고 주소창에는 http://localhost:8080/posts 입력
 - 내용에는 json형태로 작성
