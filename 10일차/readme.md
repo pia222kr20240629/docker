@@ -1,4 +1,4 @@
-# 용량부족으로 google driver 링크 공유합니다.. 이 파일에는 컴파일된 target이 포함되어 있어서  docker-compose build , docker-compose up 하시면 됩니다.
+# 용량부족으로 google driver 링크 공유합니다.. 이 파일에는 컴파일된 target이 포함되어 있어서  docker-compose build , docker-compose up 하시면 됩니다. 파일명은 final.zip 입니다.
 - https://drive.google.com/file/d/1eKfCTHfRWnrkrFtrjcHgsL-US0eu6-4b/view?usp=sharing
 
 
