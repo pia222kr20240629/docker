@@ -38,3 +38,7 @@
 - post 방식으로 변경하고 주소창에는 http://localhost:8080/posts 입력
 - 내용에는 json형태로 작성
   ![image](https://github.com/user-attachments/assets/8d108569-cfe4-417a-9b51-60832731243b)
+
+## 오페라 브라우져에서 http://localhost/posts 로 확인한다
+![image](https://github.com/user-attachments/assets/31f9faf3-5ac8-45dd-9bdc-27fa18ffe254)
+
