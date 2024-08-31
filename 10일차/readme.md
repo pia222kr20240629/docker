@@ -1,3 +1,7 @@
+# 용량부족으로 google driver 링크 공유합니다.. 이 파일에는 컴파일된 target이 포함되어 있어서  docker-compose build , docker-compose up 하시면 됩니다.
+- https://drive.google.com/file/d/1eKfCTHfRWnrkrFtrjcHgsL-US0eu6-4b/view?usp=sharing
+
+
 # 사전 환경 설정
 ### 윈도우에서 스프링부트로 생성한 board.zip 리눅스로 옮기고  컴파일 은 아래과정을 참고해서 진행
 ### 파일 옮기기
